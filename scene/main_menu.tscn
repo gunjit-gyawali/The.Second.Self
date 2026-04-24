@@ -1,40 +1,46 @@
 [gd_scene format=3 uid="uid://br5lhm2fgnh8k"]
 
 [ext_resource type="Script" uid="uid://dvs4lukm6qog7" path="res://script/main_menu.gd" id="1_3er1b"]
+[ext_resource type="Texture2D" uid="uid://cex0ph1l4vj45" path="res://assets/bg.jpg" id="2_hxu56"]
 
 [node name="MainMenu" type="Node2D" unique_id=300619373]
 script = ExtResource("1_3er1b")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1317544737]
+position = Vector2(572, 338)
+scale = Vector2(0.21366666, 0.18699999)
+texture = ExtResource("2_hxu56")
+
 [node name="Label" type="Label" parent="." unique_id=1381273572]
-offset_left = 260.0
-offset_top = 6.0
-offset_right = 1064.0
-offset_bottom = 152.0
+offset_left = 255.0
+offset_top = 30.0
+offset_right = 937.0
+offset_bottom = 176.0
 theme_override_font_sizes/font_size = 90
 text = "The.Second.Self"
 
 [node name="Button" type="Button" parent="." unique_id=1303951553]
-offset_left = 451.0
-offset_top = 161.0
-offset_right = 760.0
-offset_bottom = 306.0
-theme_override_font_sizes/font_size = 100
+offset_left = 298.0
+offset_top = 219.0
+offset_right = 892.0
+offset_bottom = 337.0
+theme_override_font_sizes/font_size = 80
 text = "Start"
 
 [node name="Button2" type="Button" parent="." unique_id=755301582]
-offset_left = 454.0
-offset_top = 322.0
-offset_right = 762.0
-offset_bottom = 467.0
-theme_override_font_sizes/font_size = 100
+offset_left = 293.0
+offset_top = 359.0
+offset_right = 898.0
+offset_bottom = 477.0
+theme_override_font_sizes/font_size = 80
 text = "Levels"
 
 [node name="Button3" type="Button" parent="." unique_id=1854831352]
-offset_left = 449.0
-offset_top = 482.0
-offset_right = 757.0
-offset_bottom = 627.0
-theme_override_font_sizes/font_size = 100
+offset_left = 293.0
+offset_top = 500.0
+offset_right = 902.0
+offset_bottom = 618.0
+theme_override_font_sizes/font_size = 80
 text = "Exit"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

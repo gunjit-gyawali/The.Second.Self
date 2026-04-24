@@ -2,8 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://by7tem0ag70j" path="res://assets/ground.jpeg" id="1_pjass"]
 [ext_resource type="Script" uid="uid://dtwfsupj3j3oj" path="res://script/world.gd" id="1_w4qq1"]
+[ext_resource type="Texture2D" uid="uid://cex0ph1l4vj45" path="res://assets/bg.jpg" id="2_0tg4p"]
 [ext_resource type="PackedScene" uid="uid://cfklm84md1dxv" path="res://scene/character_a.tscn" id="2_txmk2"]
 [ext_resource type="PackedScene" uid="uid://dbl6nkmf3h350" path="res://scene/character_b.tscn" id="4_m5mgf"]
+[ext_resource type="PackedScene" uid="uid://db8jfv7aqgqc6" path="res://scene/portal.tscn" id="5_emkrx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_txmk2"]
 texture = ExtResource("1_pjass")
@@ -230,6 +232,11 @@ sources/0 = SubResource("TileSetAtlasSource_txmk2")
 [node name="world" type="Node2D" unique_id=1391287055]
 script = ExtResource("1_w4qq1")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=431639759]
+position = Vector2(825.9999, 773.99994)
+scale = Vector2(1.0769999, 1.0574998)
+texture = ExtResource("2_0tg4p")
+
 [node name="TileMap" type="TileMap" parent="." unique_id=1536364685]
 position = Vector2(1, 0)
 tile_set = SubResource("TileSet_w4qq1")
@@ -268,3 +275,6 @@ offset_bottom = 1393.0
 theme_override_font_sizes/font_size = 54
 text = "This body is in another world.
 Your goal is to help yourself."
+
+[node name="portal" parent="." unique_id=2041745172 instance=ExtResource("5_emkrx")]
+position = Vector2(1830, 1688)

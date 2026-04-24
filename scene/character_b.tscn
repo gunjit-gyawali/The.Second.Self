@@ -9,8 +9,20 @@ size = Vector2(87.5, 173)
 [node name="CharacterB" type="CharacterBody2D" unique_id=1648245715]
 script = ExtResource("1_f36bv")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=115139438]
+[node name="idel" type="Sprite2D" parent="." unique_id=115139438]
 position = Vector2(147.875, 91.124985)
+scale = Vector2(0.39222226, 0.77444446)
+texture = ExtResource("1_r1hb5")
+
+[node name="front" type="Sprite2D" parent="." unique_id=688287459]
+position = Vector2(147.875, 91.124985)
+rotation = 0.27120766
+scale = Vector2(0.39222226, 0.77444446)
+texture = ExtResource("1_r1hb5")
+
+[node name="back" type="Sprite2D" parent="." unique_id=398063022]
+position = Vector2(147.875, 91.124985)
+rotation = -0.2715983
 scale = Vector2(0.39222226, 0.77444446)
 texture = ExtResource("1_r1hb5")
 
@@ -19,5 +31,5 @@ position = Vector2(148.25, 91.5)
 shape = SubResource("RectangleShape2D_f36bv")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1625067785]
-position = Vector2(146, 95)
+position = Vector2(166, -161)
 zoom = Vector2(0.5, 0.5)
