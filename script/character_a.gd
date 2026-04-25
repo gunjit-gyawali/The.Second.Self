@@ -43,3 +43,14 @@ func _physics_process(delta):
 		back.visible = true
 
 	move_and_slide()
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.is_in_group("block"):
+		body.collision_layer = 1
+		body.collision_mask = 1
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	if body.is_in_group("block"):
+		body.collision_layer = 2
+		body.collision_mask = 2

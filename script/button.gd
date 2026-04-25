@@ -5,13 +5,13 @@ extends Area2D
 
 	
 func _on_body_entered(body: Node2D) -> void:
-	if body.name == "CharacterA" or body.name == "CharacterB":
+	if body.name == "CharacterA" or body.name == "CharacterB" or body.name == "block":
 		up.hide()
 		border.hide()
 		border.collision_layer = 0
 
 func _on_body_exited(body: Node2D) -> void:
-	if body.name == "CharacterA" or body.name == "CharacterB":
+	if body.name == "CharacterA" or body.name == "CharacterB" or body.name == "block":
 		up.show()
 		border.show()
 		border.collision_layer = 1

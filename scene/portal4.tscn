@@ -1,46 +1,46 @@
-[gd_scene format=3 uid="uid://p40f51prqh43"]
+[gd_scene format=3 uid="uid://cilylsn83lpk7"]
 
-[ext_resource type="Script" uid="uid://c0ip2ljpfkj77" path="res://script/portal_3.gd" id="1_d5r1y"]
-[ext_resource type="Texture2D" uid="uid://c6mcf2332jg46" path="res://assets/portal.png" id="2_65ykc"]
+[ext_resource type="Script" uid="uid://burqob7xoik74" path="res://script/portal_4.gd" id="1_4qbxo"]
+[ext_resource type="Texture2D" uid="uid://c6mcf2332jg46" path="res://assets/portal.png" id="2_fp0f0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pno75"]
-atlas = ExtResource("2_65ykc")
+atlas = ExtResource("2_fp0f0")
 region = Rect2(0, 0, 156, 159)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cfsmh"]
-atlas = ExtResource("2_65ykc")
+atlas = ExtResource("2_fp0f0")
 region = Rect2(156, 0, 156, 159)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vtg32"]
-atlas = ExtResource("2_65ykc")
+atlas = ExtResource("2_fp0f0")
 region = Rect2(312, 0, 156, 159)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q5eg8"]
-atlas = ExtResource("2_65ykc")
+atlas = ExtResource("2_fp0f0")
 region = Rect2(468, 0, 156, 159)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u3hp6"]
-atlas = ExtResource("2_65ykc")
+atlas = ExtResource("2_fp0f0")
 region = Rect2(624, 0, 156, 159)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c6xy5"]
-atlas = ExtResource("2_65ykc")
+atlas = ExtResource("2_fp0f0")
 region = Rect2(0, 159, 156, 159)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3gwi4"]
-atlas = ExtResource("2_65ykc")
+atlas = ExtResource("2_fp0f0")
 region = Rect2(156, 159, 156, 159)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2cbhj"]
-atlas = ExtResource("2_65ykc")
+atlas = ExtResource("2_fp0f0")
 region = Rect2(312, 159, 156, 159)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d314w"]
-atlas = ExtResource("2_65ykc")
+atlas = ExtResource("2_fp0f0")
 region = Rect2(468, 159, 156, 159)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f2v2v"]
-atlas = ExtResource("2_65ykc")
+atlas = ExtResource("2_fp0f0")
 region = Rect2(624, 159, 156, 159)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_npqem"]
@@ -84,8 +84,8 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_f2v2v"]
 radius = 87.0919
 
-[node name="portal3" type="Area2D" unique_id=2041745172]
-script = ExtResource("1_d5r1y")
+[node name="portal4" type="Area2D" unique_id=2041745172]
+script = ExtResource("1_4qbxo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1964956311]
 position = Vector2(61, -51)
