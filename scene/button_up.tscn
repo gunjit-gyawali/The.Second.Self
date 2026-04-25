@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://fw17kfagv3oc"]
+
+[ext_resource type="Script" uid="uid://bp18g8o8yi3oa" path="res://script/button.gd" id="1_8trom"]
+[ext_resource type="Texture2D" uid="uid://41vixncm62je" path="res://assets/border.jpg" id="2_mjhp6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e4n74"]
+size = Vector2(174, 34)
+
+[node name="button_up" type="Area2D" unique_id=1908417648]
+script = ExtResource("1_8trom")
+
+[node name="up" type="Sprite2D" parent="." unique_id=536973005]
+position = Vector2(227.75, 49)
+scale = Vector2(0.17449999, 0.034)
+texture = ExtResource("2_mjhp6")
+
+[node name="down" type="Sprite2D" parent="." unique_id=1967714436]
+position = Vector2(227.75, 35)
+scale = Vector2(0.17449999, 0.005999999)
+texture = ExtResource("2_mjhp6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1770011132]
+position = Vector2(228, 49)
+shape = SubResource("RectangleShape2D_e4n74")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

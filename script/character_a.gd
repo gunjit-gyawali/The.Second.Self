@@ -7,7 +7,7 @@ extends CharacterBody2D
 @onready var cam = $Camera2D
 
 @export var speed = 1500
-@export var jump_force = -500
+@export var jump_force = -600
 @export var gravity = 900
 
 var active = false

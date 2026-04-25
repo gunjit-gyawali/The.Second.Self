@@ -13,6 +13,9 @@ func _ready():
 func _process(_delta):
 	if Input.is_action_just_pressed("switch_player"):
 		switch_player()
+	
+	if Input.is_action_just_pressed("reset"):
+		get_tree().reload_current_scene()
 
 func switch_player():
 	if current_player == player1:
