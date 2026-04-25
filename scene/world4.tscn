@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://d16u6ycppb4st" path="res://scene/border.tscn" id="6_1q8il"]
 [ext_resource type="PackedScene" uid="uid://dscge5q4cw21n" path="res://scene/button.tscn" id="7_etvlc"]
 [ext_resource type="PackedScene" uid="uid://keobbsjvlfkg" path="res://scene/block.tscn" id="8_oyc4c"]
+[ext_resource type="PackedScene" uid="uid://cilylsn83lpk7" path="res://scene/portal4.tscn" id="9_s1suq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_txmk2"]
 texture = ExtResource("3_kwg7q")
@@ -274,15 +275,18 @@ shape = SubResource("RectangleShape2D_oyc4c")
 [node name="Node" type="Node" parent="." unique_id=1746165494]
 
 [node name="border" parent="Node" unique_id=567236284 instance=ExtResource("6_1q8il")]
-position = Vector2(2520, -399)
+position = Vector2(2537, -566)
 
 [node name="button" parent="Node" unique_id=1908417648 instance=ExtResource("7_etvlc")]
 position = Vector2(-330, -178)
 
-[node name="block" parent="." unique_id=1602082451 groups=["block"] instance=ExtResource("8_oyc4c")]
+[node name="block" parent="Node" unique_id=1602082451 groups=["block"] instance=ExtResource("8_oyc4c")]
 position = Vector2(-707, -338)
 mass = 1000.0
 gravity_scale = 8.0
+
+[node name="portal4" parent="." unique_id=2041745172 instance=ExtResource("9_s1suq")]
+position = Vector2(2712, -391)
 
 [connection signal="body_entered" from="CharacterA/Area2D" to="CharacterA" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="CharacterA/Area2D" to="CharacterA" method="_on_area_2d_body_exited"]

@@ -252,7 +252,7 @@ position = Vector2(204, -219)
 position = Vector2(148, 1610)
 
 [node name="border" parent="." unique_id=567236284 instance=ExtResource("7_6hdam")]
-position = Vector2(1433.9999, -203.99998)
+position = Vector2(1423, -361)
 
 [node name="button" parent="." unique_id=1908417648 instance=ExtResource("7_7tot7")]
 position = Vector2(639, 1854)
