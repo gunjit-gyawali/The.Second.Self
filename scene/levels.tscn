@@ -60,36 +60,28 @@ theme_override_font_sizes/font_size = 100
 text = "4"
 
 [node name="btn5" type="Button" parent="." unique_id=508321261]
-offset_left = 158.0
-offset_top = 419.0
-offset_right = 308.0
-offset_bottom = 564.0
+offset_left = 290.0
+offset_top = 441.0
+offset_right = 440.0
+offset_bottom = 586.0
 theme_override_font_sizes/font_size = 100
 text = "5"
 
 [node name="btn6" type="Button" parent="." unique_id=740070610]
-offset_left = 401.0
-offset_top = 419.0
-offset_right = 551.0
-offset_bottom = 564.0
+offset_left = 533.0
+offset_top = 444.0
+offset_right = 683.0
+offset_bottom = 589.0
 theme_override_font_sizes/font_size = 100
 text = "6"
 
 [node name="btn7" type="Button" parent="." unique_id=1573956099]
-offset_left = 635.0
-offset_top = 419.0
-offset_right = 785.0
-offset_bottom = 564.0
+offset_left = 778.0
+offset_top = 451.0
+offset_right = 928.0
+offset_bottom = 596.0
 theme_override_font_sizes/font_size = 100
 text = "7"
-
-[node name="btn8" type="Button" parent="." unique_id=1170188173]
-offset_left = 881.0
-offset_top = 422.0
-offset_right = 1031.0
-offset_bottom = 567.0
-theme_override_font_sizes/font_size = 100
-text = "8"
 
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="btn1" to="." method="_on_btn_1_pressed"]
@@ -99,4 +91,3 @@ text = "8"
 [connection signal="pressed" from="btn5" to="." method="_on_btn_5_pressed"]
 [connection signal="pressed" from="btn6" to="." method="_on_btn_6_pressed"]
 [connection signal="pressed" from="btn7" to="." method="_on_btn_7_pressed"]
-[connection signal="pressed" from="btn8" to="." method="_on_btn_8_pressed"]

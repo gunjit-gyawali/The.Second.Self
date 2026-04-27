@@ -3,6 +3,7 @@ extends CharacterBody2D
 @onready var idle = $idel
 @onready var front = $front
 @onready var back = $back
+@onready var jump = $Jump
 
 @onready var cam = $Camera2D
 
@@ -23,11 +24,12 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
-	var direction = Input.get_axis("ui_left", "ui_right")
+	var direction = Input.get_axis("left", "right")
 	velocity.x = direction * speed
 
-	if Input.is_action_just_pressed("ui_up") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_force
+		jump.play()
 
 	if direction == 0:
 		idle.visible = true

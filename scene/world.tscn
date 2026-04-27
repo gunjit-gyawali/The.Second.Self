@@ -252,12 +252,12 @@ position = Vector2(148, 1610)
 [node name="Node" type="Node" parent="." unique_id=1616278875]
 
 [node name="Label" type="Label" parent="Node" unique_id=63556852]
-offset_left = 153.0
-offset_top = -357.0
-offset_right = 600.0
-offset_bottom = -288.0
+offset_left = 193.0
+offset_top = -361.0
+offset_right = 640.0
+offset_bottom = -292.0
 theme_override_font_sizes/font_size = 50
-text = "Arrow Keys - Move"
+text = "W,A,D - Move"
 
 [node name="Label2" type="Label" parent="Node" unique_id=1152994373]
 offset_left = 1520.0

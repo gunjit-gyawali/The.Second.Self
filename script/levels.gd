@@ -23,6 +23,3 @@ func _on_btn_6_pressed() -> void:
 
 func _on_btn_7_pressed() -> void:
 	get_tree().change_scene_to_file("res://scene/world7.tscn")
-
-func _on_btn_8_pressed() -> void:
-	get_tree().change_scene_to_file("res://scene/world8.tscn")

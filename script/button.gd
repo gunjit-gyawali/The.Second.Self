@@ -5,7 +5,7 @@ extends Area2D
 
 	
 func _on_body_entered(body: Node2D) -> void:
-	if body.name == "CharacterA" or body.name == "CharacterB" or body.name == "block":
+	if body.name == "CharacterA" or body.name == "CharacterB" or body.name == "block" or body.is_in_group("block"):
 		up.hide()
 		border.hide()
 		border.collision_layer = 0

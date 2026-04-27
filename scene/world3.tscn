@@ -254,7 +254,7 @@ position = Vector2(494, 91)
 [node name="Node" type="Node" parent="." unique_id=1700831829]
 
 [node name="border" parent="Node" unique_id=567236284 instance=ExtResource("6_tqo7r")]
-position = Vector2(1616, -2)
+position = Vector2(1607, -158.99998)
 
 [node name="button_up" parent="Node" unique_id=1908417648 instance=ExtResource("7_3sexn")]
 position = Vector2(724, -336)
