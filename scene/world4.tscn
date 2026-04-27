@@ -288,6 +288,31 @@ gravity_scale = 8.0
 [node name="portal4" parent="." unique_id=2041745172 instance=ExtResource("9_s1suq")]
 position = Vector2(2712, -391)
 
+[node name="Label" type="Label" parent="." unique_id=919984381]
+offset_left = 465.0
+offset_top = -526.0
+offset_right = 1720.0
+offset_bottom = -389.0
+theme_override_font_sizes/font_size = 100
+text = "- Remember previous level."
+
+[node name="Label2" type="Label" parent="." unique_id=124010938]
+offset_left = 486.0
+offset_top = -367.0
+offset_right = 1741.0
+offset_bottom = -230.0
+theme_override_font_sizes/font_size = 100
+text = "- Press R to restart level."
+
+[node name="Label3" type="Label" parent="." unique_id=435550630]
+offset_left = -570.0
+offset_top = -102.0
+offset_right = 141.0
+offset_bottom = -33.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "This botton might be strange."
+
 [connection signal="body_entered" from="CharacterA/Area2D" to="CharacterA" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="CharacterA/Area2D" to="CharacterA" method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="CharacterB/Area2D" to="CharacterB" method="_on_area_2d_body_entered"]

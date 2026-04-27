@@ -259,3 +259,11 @@ position = Vector2(639, 1854)
 
 [node name="portal2" parent="." unique_id=2041745172 instance=ExtResource("8_7tot7")]
 position = Vector2(2289, -86)
+
+[node name="Label" type="Label" parent="." unique_id=2067174168]
+offset_left = -50.0
+offset_top = -460.0
+offset_right = 1265.0
+offset_bottom = -384.0
+theme_override_font_sizes/font_size = 55
+text = "There might be something with your another self."

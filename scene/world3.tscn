@@ -261,3 +261,11 @@ position = Vector2(724, -336)
 
 [node name="portal3" parent="." unique_id=2041745172 instance=ExtResource("8_obm1g")]
 position = Vector2(1765, 48)
+
+[node name="Label" type="Label" parent="." unique_id=3327621]
+offset_left = 509.0
+offset_top = -493.0
+offset_right = 1478.0
+offset_bottom = -400.0
+theme_override_font_sizes/font_size = 68
+text = "You can freeze yourself in air."
