@@ -233,8 +233,8 @@ sources/0 = SubResource("TileSetAtlasSource_txmk2")
 script = ExtResource("1_w4qq1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=431639759]
-position = Vector2(825.9999, 773.99994)
-scale = Vector2(1.0769999, 1.0574998)
+position = Vector2(752, 487)
+scale = Vector2(0.9833333, 1.0574998)
 texture = ExtResource("2_0tg4p")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1536364685]
@@ -257,7 +257,7 @@ offset_top = -361.0
 offset_right = 640.0
 offset_bottom = -292.0
 theme_override_font_sizes/font_size = 50
-text = "W,A,D - Move"
+text = "W,A,D - Move, Jump"
 
 [node name="Label2" type="Label" parent="Node" unique_id=1152994373]
 offset_left = 1520.0
