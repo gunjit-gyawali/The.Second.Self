@@ -26,6 +26,6 @@ In **The.Second.Self**, you control **two characters** with different abilities.
 
 ## Future Updates
 
-- More levels with new puzzle mechanics.  
+- More levels with new puzzle mechanics and also fights.  
 - Extra abilities for each character.  
 - Potential co-op mode or advanced challenges.

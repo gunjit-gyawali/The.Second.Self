@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dbl6nkmf3h350"]
 
 [ext_resource type="Script" uid="uid://2vi2a8a2xfie" path="res://script/character_b.gd" id="1_f36bv"]
-[ext_resource type="Texture2D" uid="uid://dp5u0y35ms3c6" path="res://assets/player2.png" id="1_r1hb5"]
+[ext_resource type="Texture2D" uid="uid://2u81gbt8nquk" path="res://assets/sprite2.png" id="2_tyljj"]
 [ext_resource type="AudioStream" uid="uid://bdualhu6kh32b" path="res://assets/jump.wav" id="3_tyljj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f36bv"]
@@ -12,21 +12,28 @@ collision_layer = 3
 script = ExtResource("1_f36bv")
 
 [node name="idel" type="Sprite2D" parent="." unique_id=115139438]
-position = Vector2(147.875, 91.124985)
-scale = Vector2(0.39222226, 0.77444446)
-texture = ExtResource("1_r1hb5")
+position = Vector2(148, 91.5)
+scale = Vector2(0.088088095, 0.07924874)
+texture = ExtResource("2_tyljj")
+region_enabled = true
+region_rect = Rect2(167.3233, 455.5365, 999.1689, 2183.3896)
 
 [node name="front" type="Sprite2D" parent="." unique_id=688287459]
-position = Vector2(147.875, 91.124985)
-rotation = 0.27120766
-scale = Vector2(0.39222226, 0.77444446)
-texture = ExtResource("1_r1hb5")
+position = Vector2(164.94557, 92.82569)
+rotation = 0.0044692457
+scale = Vector2(0.0886181, 0.07559562)
+texture = ExtResource("2_tyljj")
+region_enabled = true
+region_rect = Rect2(1648.6992, 367.68384, 1370.5999, 2323.6467)
 
-[node name="back" type="Sprite2D" parent="." unique_id=398063022]
-position = Vector2(147.875, 91.124985)
-rotation = -0.2715983
-scale = Vector2(0.39222226, 0.77444446)
-texture = ExtResource("1_r1hb5")
+[node name="back" type="Sprite2D" parent="." unique_id=123890590]
+position = Vector2(131.99239, 92.70548)
+rotation = 0.0044692457
+scale = Vector2(0.0886181, 0.07508833)
+texture = ExtResource("2_tyljj")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1648.6992, 367.68384, 1370.5999, 2323.6467)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1005377781]
 position = Vector2(148.25, 91.5)
