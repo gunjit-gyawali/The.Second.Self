@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://br5lhm2fgnh8k"]
+
+[ext_resource type="Script" uid="uid://dvs4lukm6qog7" path="res://script/main_menu.gd" id="1_3er1b"]
+[ext_resource type="Texture2D" uid="uid://0t0f2lkycuxk" path="res://assets/bg4.jpg" id="2_2fwvj"]
+[ext_resource type="FontFile" uid="uid://llu15op1khkh" path="res://assets/font3.otf" id="3_0iwki"]
+[ext_resource type="Texture2D" uid="uid://2u81gbt8nquk" path="res://assets/sprite2.png" id="4_sepwh"]
+[ext_resource type="Texture2D" uid="uid://dhc6s0q6mn6r8" path="res://assets/sprite1.png" id="5_14wem"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0iwki"]
+bg_color = Color(0, 0, 0.15686275, 0)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0, 0, 0.8039216, 0.6)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sepwh"]
+bg_color = Color(0.68235296, 0.46666667, 0.9882353, 0)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_14wem"]
+bg_color = Color(0.30980393, 0.44313726, 0.84705883, 0)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 10
+
+[node name="MainMenu" type="Node2D" unique_id=300619373]
+script = ExtResource("1_3er1b")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1317544737]
+position = Vector2(566.19714, 331.26266)
+rotation = -1.585748
+scale = Vector2(1.1562144, 1.3775766)
+texture = ExtResource("2_2fwvj")
+
+[node name="Label" type="Label" parent="." unique_id=1381273572]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 172.18504
+offset_top = 49.42508
+offset_right = 955.18506
+offset_bottom = 148.42508
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.010125218
+theme_override_colors/font_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+theme_override_constants/shadow_offset_y = 10
+theme_override_fonts/font = ExtResource("3_0iwki")
+theme_override_font_sizes/font_size = 74
+text = "The.Second.Self"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=105397730]
+offset_left = 708.68506
+offset_top = 257.92508
+offset_right = 1021.68506
+offset_bottom = 553.92505
+theme_override_constants/separation = 46
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1303951553]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+theme_override_fonts/font = ExtResource("3_0iwki")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_0iwki")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sepwh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_14wem")
+text = "Start"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=755301582]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+theme_override_fonts/font = ExtResource("3_0iwki")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_0iwki")
+theme_override_styles/hover = SubResource("StyleBoxFlat_14wem")
+text = "Levels"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1854831352]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+theme_override_fonts/font = ExtResource("3_0iwki")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_0iwki")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sepwh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_14wem")
+text = "Exit"
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1026031498]
+position = Vector2(346.427, 445.50232)
+rotation = 0.5650585
+scale = Vector2(0.13258462, 0.10636744)
+texture = ExtResource("4_sepwh")
+region_enabled = true
+region_rect = Rect2(213.57959, 423.11914, 959.2804, 2216.7344)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=123345548]
+position = Vector2(252.27864, 457.81653)
+rotation = -0.43021354
+scale = Vector2(0.13852403, 0.107654236)
+texture = ExtResource("5_14wem")
+region_enabled = true
+region_rect = Rect2(213.57959, 423.11914, 959.2804, 2216.7344)
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

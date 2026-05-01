@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://d16u6ycppb4st"]
+
+[ext_resource type="Texture2D" uid="uid://41vixncm62je" path="res://assets/border.jpg" id="1_u337n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u337n"]
+size = Vector2(983.7942, 999.0012)
+
+[node name="border" type="StaticBody2D" unique_id=567236284]
+position = Vector2(288.4375, 109.374985)
+scale = Vector2(0.13112503, 0.75075)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1693713086]
+position = Vector2(-166.8255, 218.44824)
+texture = ExtResource("1_u337n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=831752488]
+position = Vector2(-158.72247, 219.28073)
+scale = Vector2(0.99999946, 0.9999996)
+shape = SubResource("RectangleShape2D_u337n")

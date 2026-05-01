@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://3xn307tfyrbp"]
+
+[ext_resource type="Script" uid="uid://bj7tafvihmetr" path="res://script/levels.gd" id="1_k7kto"]
+[ext_resource type="Texture2D" uid="uid://cex0ph1l4vj45" path="res://assets/bg.jpg" id="2_u8q0q"]
+
+[node name="Levels" type="Node2D" unique_id=1658835973]
+script = ExtResource("1_k7kto")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=963347487]
+position = Vector2(572, 338)
+scale = Vector2(0.21366666, 0.18699999)
+texture = ExtResource("2_u8q0q")
+
+[node name="Text" type="Label" parent="." unique_id=1379171928]
+offset_left = 378.0
+offset_top = -18.0
+offset_right = 827.0
+offset_bottom = 187.0
+theme_override_font_sizes/font_size = 150
+text = "Levels"
+
+[node name="Back" type="Button" parent="." unique_id=53370131]
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 160.0
+offset_bottom = 155.0
+theme_override_font_sizes/font_size = 100
+text = "←"
+
+[node name="btn1" type="Button" parent="." unique_id=899524304]
+offset_left = 154.0
+offset_top = 210.0
+offset_right = 304.0
+offset_bottom = 355.0
+theme_override_font_sizes/font_size = 100
+text = "1"
+
+[node name="btn2" type="Button" parent="." unique_id=1959785030]
+offset_left = 402.0
+offset_top = 199.0
+offset_right = 552.0
+offset_bottom = 344.0
+theme_override_font_sizes/font_size = 100
+text = "2"
+
+[node name="btn3" type="Button" parent="." unique_id=1981581512]
+offset_left = 649.0
+offset_top = 201.0
+offset_right = 799.0
+offset_bottom = 346.0
+theme_override_font_sizes/font_size = 100
+text = "3"
+
+[node name="btn4" type="Button" parent="." unique_id=1997900094]
+offset_left = 882.0
+offset_top = 202.0
+offset_right = 1032.0
+offset_bottom = 347.0
+theme_override_font_sizes/font_size = 100
+text = "4"
+
+[node name="btn5" type="Button" parent="." unique_id=508321261]
+offset_left = 290.0
+offset_top = 441.0
+offset_right = 440.0
+offset_bottom = 586.0
+theme_override_font_sizes/font_size = 100
+text = "5"
+
+[node name="btn6" type="Button" parent="." unique_id=740070610]
+offset_left = 533.0
+offset_top = 444.0
+offset_right = 683.0
+offset_bottom = 589.0
+theme_override_font_sizes/font_size = 100
+text = "6"
+
+[node name="btn7" type="Button" parent="." unique_id=1573956099]
+offset_left = 778.0
+offset_top = 451.0
+offset_right = 928.0
+offset_bottom = 596.0
+theme_override_font_sizes/font_size = 100
+text = "7"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="btn1" to="." method="_on_btn_1_pressed"]
+[connection signal="pressed" from="btn2" to="." method="_on_btn_2_pressed"]
+[connection signal="pressed" from="btn3" to="." method="_on_btn_3_pressed"]
+[connection signal="pressed" from="btn4" to="." method="_on_btn_4_pressed"]
+[connection signal="pressed" from="btn5" to="." method="_on_btn_5_pressed"]
+[connection signal="pressed" from="btn6" to="." method="_on_btn_6_pressed"]
+[connection signal="pressed" from="btn7" to="." method="_on_btn_7_pressed"]

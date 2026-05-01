@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://betpcxcpb24w"]
+
+[ext_resource type="Script" uid="uid://bihs32db21eac" path="res://script/end.gd" id="1_acqqh"]
+[ext_resource type="Texture2D" uid="uid://0t0f2lkycuxk" path="res://assets/bg4.jpg" id="2_u4okq"]
+[ext_resource type="FontFile" uid="uid://llu15op1khkh" path="res://assets/font3.otf" id="3_xdgq8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_osy0p"]
+bg_color = Color(0, 0, 0.15686275, 0)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0, 0, 0.8039216, 0.6)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6x2ct"]
+bg_color = Color(0.68235296, 0.46666667, 0.9882353, 0)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_54bel"]
+bg_color = Color(0.30980393, 0.44313726, 0.84705883, 0)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 10
+
+[node name="end" type="Node2D" unique_id=840732058]
+script = ExtResource("1_acqqh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1939570781]
+position = Vector2(567.5121, 331.3376)
+rotation = -1.585748
+scale = Vector2(1.1562144, 1.3775766)
+texture = ExtResource("2_u4okq")
+
+[node name="Label" type="Label" parent="." unique_id=237268556]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 241.00003
+offset_top = 60.0
+offset_right = 886.0
+offset_bottom = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.010125218
+theme_override_colors/font_color = Color(0.5846038, 0.8152652, 0.7322888, 1)
+theme_override_constants/shadow_offset_y = 10
+theme_override_fonts/font = ExtResource("3_xdgq8")
+theme_override_font_sizes/font_size = 120
+text = "The ENd"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=449674522]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 266.0
+offset_top = 358.0
+offset_right = 916.0
+offset_bottom = 596.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 46
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1013062195]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+theme_override_fonts/font = ExtResource("3_xdgq8")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_osy0p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6x2ct")
+theme_override_styles/hover = SubResource("StyleBoxFlat_54bel")
+text = "Main Menu"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1660312851]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+theme_override_fonts/font = ExtResource("3_xdgq8")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_osy0p")
+theme_override_styles/hover = SubResource("StyleBoxFlat_54bel")
+text = "Exit"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
