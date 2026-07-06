@@ -34,7 +34,7 @@ shadow_size = 10
 script = ExtResource("1_3er1b")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1317544737]
-position = Vector2(566.19714, 331.26266)
+position = Vector2(562.99994, 330)
 rotation = -1.585748
 scale = Vector2(1.1562144, 1.3775766)
 texture = ExtResource("2_2fwvj")
@@ -44,10 +44,10 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 172.18504
-offset_top = 49.42508
-offset_right = 955.18506
-offset_bottom = 148.42508
+offset_left = 188.00002
+offset_top = 63.0
+offset_right = 993.0
+offset_bottom = 161.99998
 grow_horizontal = 2
 grow_vertical = 2
 rotation = -0.010125218
@@ -55,7 +55,7 @@ theme_override_colors/font_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
 theme_override_constants/shadow_offset_y = 10
 theme_override_fonts/font = ExtResource("3_0iwki")
 theme_override_font_sizes/font_size = 74
-text = "The.Second.Self"
+text = "The Second Self"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=105397730]
 offset_left = 708.68506

@@ -276,7 +276,7 @@ shape = SubResource("RectangleShape2D_oyc4c")
 [node name="Node" type="Node" parent="." unique_id=674703834]
 
 [node name="border" parent="Node" unique_id=567236284 instance=ExtResource("8_rqkoy")]
-position = Vector2(309, 273)
+position = Vector2(281, 229)
 collision_layer = 3
 
 [node name="block" parent="Node" unique_id=1602082451 instance=ExtResource("6_c8mno")]
